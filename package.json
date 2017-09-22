@@ -1,0 +1,26 @@
+{
+  "name": "exchanges-gateway",
+  "version": "0.0.1",
+  "description": "Main Service for fetching data from many exchanges",
+  "main": "server/server.js",
+  "repository": "https://github.com/magiceddy/exchanges-gateway.git",
+  "author": "rinaldo.rossi.web@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --cache --format=node_modules/eslint-formatter-pretty .",
+    "validate": "npm ls"
+  },
+  "dependencies": {
+    "boom": "^5.2.0",
+    "hapi": "^16.6.0",
+    "joi": "^11.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.7.2",
+    "eslint-formatter-pretty": "^1.3.0",
+    "precommit-hook": "^3.0.0"
+  },
+  "pre-commit": [
+    "lint"
+  ]
+}
